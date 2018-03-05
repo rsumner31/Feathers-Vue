@@ -38,8 +38,6 @@ const modules = {
         exclude: node,
         include: [
           folders.app,
-          folders.admin,
-          folders.shared,
           folders.renderer
         ]
       },
@@ -49,8 +47,6 @@ const modules = {
         exclude: node,
         include: [
           folders.app,
-          folders.admin,
-          folders.shared,
           folders.renderer
         ]
       },
@@ -60,28 +56,22 @@ const modules = {
         exclude: node,
         include: [
           folders.app,
-          folders.admin,
-          folders.shared,
           folders.renderer
         ]
       },
       {
-        test: /\.scss/,
+        test: /\.scss$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader"),
         include: [
           folders.app,
-          folders.admin,
-          folders.shared,
           folders.renderer
         ]
       },
       {
-        test: /\.styl/,
+        test: /\.styl$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader!stylus-loader"),
         include: [
           folders.app,
-          folders.admin,
-          folders.shared,
           folders.renderer
         ]
       },
