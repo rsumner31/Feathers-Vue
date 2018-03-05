@@ -24,4 +24,4 @@ if(Vue.prototype.$isServer) {
   }
 }
 
-export { url }
+exports.url = url
