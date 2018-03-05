@@ -12,7 +12,8 @@ const auth = {
     if(!err) {
       foundUser = foundUser.data
       notify.success(`Hello ${foundUser.name || foundUser.email}`)
-      return auth.currentUser = foundUser
+      auth.currentUser = foundUser
+      return auth.currentUser
     } else {
       notify.warning(err.message)
       console.error('Error authenticating', err.message)
